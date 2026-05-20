@@ -1,0 +1,22 @@
+body {
+    background-color:black;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+footer img {
+    width: 32px;
+}
+
+footer li:first-child img{
+    width: 40px;
+}
