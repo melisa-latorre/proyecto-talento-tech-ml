@@ -1,6 +1,9 @@
 body {
     background-color:black;
 }
+p {
+    color:white;
+}
 
 
 
@@ -13,6 +16,32 @@ body {
 
 
 /* footer */
+footer {
+    display: flex;
+    align-items: center;
+    padding: 30px 20px;
+}
+
+.footer-izquierdo, .footer-centro, .footer-derecho {
+    flex: 1;
+}
+
+.footer-izquierdo{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footer-centro{
+    text-align: center;
+    font-size: 12px; 
+}
+
+.footer-derecho{
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
 footer img {
     width: 32px;
 }
@@ -20,3 +49,5 @@ footer img {
 footer li:first-child img{
     width: 40px;
 }
+
+
