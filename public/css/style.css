@@ -67,9 +67,16 @@ nav {
     color: #fa84ba;
 }
 
-    
+/* query para el navbar */ 
 
-
+@media (max-width: 768px) {
+  .logo-principal  {
+    display: none;
+  }
+   .navbar {
+    justify-content: center;
+  }
+}
 
 
 /* footer */
@@ -116,6 +123,145 @@ footer img {
 footer li:first-child img{
     width: 40px;
 }
+
+/* query para el footer */
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+  
+  .footer-izquierdo, .footer-centro, .footer-derecho {
+    flex: none;
+  }
+  
+  .footer-izquierdo {
+    justify-content: center;
+  }
+  
+  .footer-derecho {
+    justify-content: center;
+  }
+}
+
+/* tienda */
+.titulo-tienda {
+    text-align: center;
+    font-size: 2rem;
+    color: #FFFFFF;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    padding-top: 15px 15px;;
+    font-family: "League Gothic", sans-serif;
+    letter-spacing: 2px;
+    width: 100%;
+    background-color: #fa84ba;
+}
+
+.productos-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 0 25px;
+}
+
+/* media query para productos*/
+@media (max-width: 768px) {
+  .productos-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.card img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+
+.card h3 {
+  font-size: 18px;
+  margin: 10px;
+}
+
+.precio {
+  margin: 0 10px 10px;
+}
+
+.productos-grid button {
+  margin: 10px;
+  padding: 8px;
+  border: none;
+  border-radius: 12px;
+  background-color:#fa84ba;
+  color:#FFFFFF;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+.productos-grid button:hover {
+  background-color: #0663b8;
+  color: #ffffff;
+}
+
+/* reseñas */
+
+.reseñas {
+  text-align: center;
+  padding: 50px 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+
+.reseñas-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.reseña-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 140px;
+  box-shadow: 0 4px 12px rgba(250, 132, 186, 0.25);
+}
+
+
+.reseña-texto {
+  font-size: 18px;
+  line-height: 1.4;
+  font-style: italic;
+  font-weight: light;
+}
+
+
+.nombre-reseña {
+  margin-top: 15px;
+  text-align: right;
+}
+
+/* query para reseñas */
+
+@media (max-width: 768px) {
+  .reseñas-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
 
 /* formulario*/
 
@@ -184,4 +330,10 @@ label {
     display:none;
 }
 
-/* AGREGAR QUERIES EN FORMULARIO*/
+/* query para formulario*/
+@media (max-width: 768px) {
+  .formulario {
+    width: 100%;
+    padding: 0 10px;
+  }
+}
