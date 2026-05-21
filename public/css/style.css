@@ -1,25 +1,87 @@
-body {
-    background-color:black;
-}
+
+
+/*colores a usar:
+ azul oscuro: #0a204b 
+ rosa: #fa84ba;
+ azul celeste: #0663b8;
+*/
+
+
+/*fuentes de google*/
+
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 p {
-    color:white;
+    color:#000000;
 }
 
 
+/*body*/
+
+body {
+  margin: 0;
+  background-color: #ffffff; 
+  font-family: "League Gothic", sans-serif;
+  color: #02192B; 
+}
 
 
+/* header, estilos para el navbar principal */ 
 
+nav {
+  background-color: #0a204b; 
+  color: #ffffff; 
+  padding: 10px;
+  border-bottom: 7px solid #0663b8; 
+}
 
+.navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    list-style: none;
+    padding: 0 20px;
+    gap: 40px;
+}
 
+.logo-principal img {
+    width: 50px;
+}
+
+.navbar a {
+    font-family: "League Gothic", sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    color: #0663b8;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+}
+
+.navbar a{
+    transition: all 0.3s ease;
+}
+
+.navbar a:hover{
+    opacity: 0.7;
+    color: #fa84ba;
+}
+
+    
 
 
 
 
 /* footer */
+
 footer {
     display: flex;
     align-items: center;
-    padding: 30px 20px;
+    background-color: #0a204b;
+    color: #ffffff;
+    padding: 40px 20px;
+    margin-top: 50px;
+    border-top: 7px solid #0663b8; 
 }
 
 .footer-izquierdo, .footer-centro, .footer-derecho {
@@ -33,7 +95,12 @@ footer {
 
 .footer-centro{
     text-align: center;
-    font-size: 12px; 
+}
+
+.footer-centro p {
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
 }
 
 .footer-derecho{
@@ -50,4 +117,71 @@ footer li:first-child img{
     width: 40px;
 }
 
+/* formulario*/
 
+form, .contacto h2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.contacto {
+    margin-top: 50px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 18px;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #fa84ba;
+    border: none;
+    border-radius: 12px;
+    color: #0a204b;
+}
+
+::placeholder, select{
+    color:#ffffff;
+    /*color: #0a204b;*/
+    font-weight: bold;
+    font-size: 1rem; 
+}
+
+option {
+    color:#fa84ba;
+    background-color: #FFFFFF;
+    font-weight: bold;
+}
+.botones-contacto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.botones-contacto button {
+    width: 100%;
+    padding: 15px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color:#000000;
+    border: none;
+    border-radius: 12px;
+    color: #ffffff;
+}
+
+button:hover {
+    background-color: #0a204b;
+}
+
+label {
+    display:none;
+}
+
+/* AGREGAR QUERIES EN FORMULARIO*/
