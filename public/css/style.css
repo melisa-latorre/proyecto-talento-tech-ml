@@ -181,7 +181,45 @@ footer li:first-child img{
   display: block;
 }
 
+ /* info */
 
+ .seccion-fotos {
+  width: 80%;
+  margin: 60px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.primera-foto,
+.segunda-foto,
+.tercera-foto {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.primera-foto img,
+.segunda-foto img,
+.tercera-foto img {
+  width: 60%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+
+.primer-texto,
+.segundo-texto,
+.tercer-texto {
+  width: 40%;
+}
+
+.primera-foto:nth-child(even),
+.segunda-foto:nth-child(even),
+.tercera-foto:nth-child(even) {
+  flex-direction: row-reverse;
+}
 
 /* estilos para la página tienda */
 .titulo-tienda {
