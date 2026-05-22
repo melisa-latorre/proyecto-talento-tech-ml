@@ -30,7 +30,7 @@ body {
 }
 
 
-/* header, estilos para el navbar principal */ 
+/* estilos para el navbar principal de todas las páginas */ 
 
 nav {
   background-color: #0a204b; 
@@ -83,7 +83,7 @@ nav {
 }
 
 
-/* footer */
+/* estilos para el footer de todas las páginas */
 
 footer {
     display: flex;
@@ -150,7 +150,12 @@ footer li:first-child img{
   }
 }
 
-/* tienda */
+
+/* estilos para la página de inicio */
+
+
+
+/* estilos para la página tienda */
 .titulo-tienda {
     text-align: center;
     font-size: 2rem;
@@ -278,7 +283,7 @@ footer li:first-child img{
 
 
 
-/* formulario*/
+/* estilos para la página contacto y formulario*/
 
 form, .contacto h2{
     display: flex;
