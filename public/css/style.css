@@ -397,6 +397,7 @@ footer li:first-child img{
   gap: 20px;
   max-width: 1100px;
   margin: 0 auto;
+  margin-top: 15px;
 }
 
 .reseña-card {
@@ -409,14 +410,6 @@ footer li:first-child img{
   min-height: 140px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
-
-
-.reseña-texto {
-  font-size: 16px;
-  line-height: 1.4;
-  font-weight: light;
-}
-
 
 .nombre-reseña {
   margin-top: 15px;
