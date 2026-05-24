@@ -272,6 +272,11 @@ main {
 }
 
 
+@media (max-width: 768px) {
+  .segunda-foto {
+    display: none;
+  }
+}
 
 /* estilos para el video */
 
