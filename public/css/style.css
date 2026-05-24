@@ -33,41 +33,44 @@ body {
 /* estilos para el navbar principal de todas las páginas */ 
 
 .navbar-principal {
-  background-color: #0a204b; 
-  color: #ffffff; 
-  padding: 10px !important; 
-  border-bottom: 7px solid #0663b8; 
+  background-color: #000000;  
+  padding: 1px;
+  border-bottom: 3px solid #0663b8;
   width: 100%;
+  margin: 0;
 }
 
 .navbar-principal ul {
     display: flex;
     align-items: center; 
-    justify-content: end;
+    justify-content: center;
     list-style: none;
-    padding: 0 5px;
+    padding: 0;
+    margin: 0px;
     gap: 30px;
+    width: 100%;
 }
 
 .logo-principal img {
     width: 50px;
+    height: 40px;
+    object-fit: contain;
+    display: block;
+    margin: 0;
+    padding: 0;
 }
 
 .navbar-principal a {
     font-family: "League Gothic", sans-serif;
-    font-size: 32px;
+    font-size: 20px;
     font-weight: 500;
-    color: #0663b8;
+    color: #ffffff;
     text-decoration: none;
-    border-bottom: 2px solid transparent;
-}
-
-.navbar-principal a{
     transition: all 0.3s ease;
 }
 
 .navbar-principal a:hover{
-    opacity: 0.7;
+    opacity: 0.9;
     color: #fa84ba;
 }
 
@@ -79,6 +82,7 @@ body {
   }
    .navbar-principal ul {
     justify-content: center;
+    margin: 5px;
   }
 }
 
@@ -88,11 +92,11 @@ body {
 footer {
     display: flex;
     align-items: center;
-    background-color: #0a204b;
+    background-color: #000000;
     color: #ffffff;
     padding: 40px 20px;
     margin-top: 50px;
-    border-top: 7px solid #0663b8; 
+    border-top: 2px solid #fa84ba; 
     width: 100%;
 }
 
@@ -112,7 +116,7 @@ footer {
 .footer-centro p {
     color: #ffffff;
     font-family: "Montserrat", sans-serif;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .footer-derecho{
@@ -128,6 +132,7 @@ footer img {
 footer li:first-child img{
     width: 40px;
 }
+
 
 /* query para el footer */
 @media (max-width: 768px) {
@@ -222,24 +227,51 @@ footer li:first-child img{
 }
 
 /* estilos para la página tienda */
+
 .titulo-tienda {
+    display: inline-block;
     text-align: center;
-    font-size: 2rem;
-    color: #FFFFFF;
-    margin-top: 0px;
-    margin-bottom: 40px;
+    font-size: 2.2rem;
+    color: #000000;
+    margin-top: 25px;
+    margin-bottom: 10px;
     padding: 3px;
-    font-family: "League Gothic", sans-serif;
-    letter-spacing: 2px;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 1px;
     width: 100%;
-    background-color: #fa84ba;
+    font-weight: bolder;
+    transition: all 0.3s ease;
+}
+
+.subtitulo-tienda {
+    text-align: center;
+    font-size: 1rem;
+    color: #000000;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    padding: 2px;
+    font-family: "Montserrat", sans-serif;
+    word-spacing: 7px;
+    width: 100%;
+}
+
+.titulo-tienda-destacados {
+  color: #000000;
+}
+
+.titulo-tienda-destacados:hover {
+  color: #0663b8;
+}
+
+.titulo-tienda:hover {
+  transform: scale(1.05);
 }
 
 .productos-grid {
   display: grid;
   grid-template-columns: repeat(3, 0.5fr);
-  gap: 10px;
-  /*padding: 5px;*/
+  gap: 20px;
+  padding: 20px;
   justify-items: center;
 }
 
@@ -253,10 +285,12 @@ footer li:first-child img{
 .card {
   display: flex;
   flex-direction: column;
+  border: none;
   border-radius: 12px;
   overflow: hidden; 
-  background: #ffffff;
-  width: 400px;
+  background: #fffafa;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(247, 208, 228, 0.25);
 }
 
 /* media query para cards*/
@@ -269,17 +303,20 @@ footer li:first-child img{
 
 .card img {
   width: 100%;
-  height: 400px; 
+  height: 400%; 
   object-fit: cover;
+  border-radius: 12px;
 }
 
 .card h3 {
-  font-size: 18px;
+  font-size: 22px;
   margin: 10px;
+  font-weight: light;
 }
 
 .precio {
   margin: 0 10px 10px;
+  font-size: 22px;
 }
 
 .productos-grid button {
@@ -315,21 +352,20 @@ footer li:first-child img{
 }
 
 .reseña-card {
-  background: #ffffff;
+  background: #fffafa;
   padding: 20px;
   border-radius: 12px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   min-height: 140px;
-  box-shadow: 0 4px 12px rgba(250, 132, 186, 0.25);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
 
 .reseña-texto {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.4;
-  font-style: italic;
   font-weight: light;
 }
 
@@ -362,7 +398,11 @@ form, .contacto h2{
 }
 
 .contacto {
-    margin-top: 50px;
+    margin-top: 15px;
+}
+
+.contacto-mensaje {
+    color: #fa84ba;
 }
 
 input, select, textarea {
@@ -409,7 +449,7 @@ option {
 }
 
 button:hover {
-    background-color: #0a204b;
+    background-color: #0663b8;
 }
 
 label {

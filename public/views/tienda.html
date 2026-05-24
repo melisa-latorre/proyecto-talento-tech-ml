@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="../css/style.css">
     <title> FC </title> 
 </head>
-<body>
+<body class="fondo-tienda">
     <header>
          <!-- lista desordenada con links de navegación, rutas relativas -->
          <nav class="navbar-principal">
-               <ul>
-                    <li class="logo-principal"><a href="https://francolapinto.com" target="_blank"><img src="../img/logo43_celeste.png" alt="logo número de Franco Colapinto"></a></li>
+                <ul> 
+                    <li class="logo-principal"><a href="https://francolapinto.com" target="_blank"><img src="../img/logoFC43.png" alt="logo número de Franco Colapinto"></a></li>
                     <li><a href="../../index.html" target="_blank"> INICIO</a></li>
                     <li><a href="../views/tienda.html">TIENDA</a></li>
                     <li><a href="../views/contacto.html" target="_blank">CONTACTO</a></li>
@@ -21,14 +21,16 @@
     </header>
      <main>
         <!-- productos -->
-        <section class="destacados">
-     <h2 class="titulo-tienda">PRODUCTOS DESTACADOS</h2>
+        <section class="destacados"> 
+     <h2 class="titulo-tienda">PRODUCTOS <span class="titulo-tienda-destacados">DESTACADOS</span></h2>
+     <h3 class="subtitulo-tienda">GORRAS REMERAS BUZOS <br> CAMPERAS ZAPATILLAS COLECCIONABLES</h3>
+      <!-- modificar selección de productos con js para entrega final -->
 
   <div class="productos-grid">
 
     <!-- producto 1 -->
     <div class="card">
-      <img src="../img/gorra.jpg" alt="Gorra Alpine">
+      <img src="../img/gorra.png" alt="Gorra Alpine">
       <h3>GORRA ALPINE</h3>
       <p class="precio">$40.000</p>
       <button>COMPRAR</button>
@@ -36,7 +38,7 @@
 
     <!-- producto 2 -->
     <div class="card">
-      <img src="../img/buzo1.jpg" alt="Buzo con capucha Alpine">
+      <img src="../img/buzo1.png" alt="Buzo con capucha Alpine">
       <h3>BUZO CON CAPUCHA ALPINE</h3>
       <p class="precio">$80.000</p>
       <button>COMPRAR</button>
@@ -52,7 +54,7 @@
 
     <!-- producto 4 -->
     <div class="card">
-      <img src="../img/remera.jpg" alt="Remera 43 Alpine">
+      <img src="../img/remera.png" alt="Remera 43 Alpine">
       <h3>REMERA 43 ALPINE</h3>
       <p class="precio">$50.000</p>
       <button>COMPRAR</button>
@@ -60,7 +62,7 @@
 
     <!-- producto 5 -->
     <div class="card">
-      <img src="../img/autoescala.jpg" alt="Auto de colección Alpine A526">
+      <img src="../img/autoescala.png" alt="Auto de colección Alpine A526">
       <h3>AUTO DE COLECCIÓN ALPINE A526</h3>
       <p class="precio">$50.000</p>
       <button>COMPRAR</button>
@@ -78,22 +80,23 @@
 
      <!-- reseñas -->
       <section class="reseñas">
-       <h2 class="titulo-reseñas">Lo que opinan nuestros clientes: </h2>
+       <h2 class="titulo-reseñas">LO QUE OPINAN NUESTROS CLIENTES:</h2>
 
        <div class="reseñas-grid">
          <div class="reseña-card">
-          <p class="reseña-texto">“Excelente calidad de los productos. Llegó todo en perfecto estado y antes de lo esperado.”</p>
-          <span class="nombre-reseña"> María L.</span>
+          <p class="reseña-texto">“EXCELENTE CALIDAD DE LOS PRODUCTOS. LLEGÓ TODO EN PERFECTO ESTADO Y ANTES DE LO ESPERADO.
+”</p>
+          <span class="nombre-reseña"> MARIA L.</span>
          </div>
 
          <div class="reseña-card">
-          <p class="reseña-texto">“Muy buena experiencia de compra, las prendas son tal cual las fotos.”</p>
-          <span class="nombre-reseña"> Pablo M.</span>
+          <p class="reseña-texto">“MUY BUENA EXPERIENCIA DE COMPRA, LAS PRENDAS SON TAL CUAL LAS FOTOS.”</p>
+          <span class="nombre-reseña"> PABLO M.</span>
          </div>
 
          <div class="reseña-card">
-          <p class="reseña-texto">“Diseño increíble y materiales de primera calidad. Volvería a comprar sin dudas.”</p>
-          <span class="nombre-reseña"> Sofía T.</span>
+          <p class="reseña-texto">“DISEÑO INCREÍBLE Y MATERIALES DE PRIMERA CALIDAD. VOLVERÍA A COMPRAR SIN DUDAS.”</p>
+          <span class="nombre-reseña"> SOFÍA T.</span>
          </div>
       </div>
 </section>
