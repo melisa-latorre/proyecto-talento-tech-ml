@@ -1,7 +1,6 @@
 
 
 /*colores a usar:
- azul oscuro: #0a204b 
  rosa: #fa84ba;
  azul celeste: #0663b8;
 */
@@ -12,15 +11,17 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-p {
-    color:#000000;
-}
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
+p {
+    color:#000000;
+}
+
 
 /*body*/
 
