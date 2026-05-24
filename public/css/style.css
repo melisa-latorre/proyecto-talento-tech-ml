@@ -273,8 +273,10 @@ main {
 
 
 @media (max-width: 768px) {
-  .segunda-foto {
-    display: none;
+  .primer-texto,
+.segundo-texto,
+.tercer-texto {
+    font-size: 16px;
   }
 }
 
