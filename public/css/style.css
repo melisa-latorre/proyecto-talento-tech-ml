@@ -246,6 +246,7 @@ footer li:first-child img{
 .segundo-texto,
 .tercer-texto {
   width: 40%;
+  font-size: 20px;
 }
 
 .primera-foto:nth-child(even),
