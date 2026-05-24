@@ -18,6 +18,8 @@ p {
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /*body*/
@@ -35,11 +37,17 @@ body {
 .navbar-principal, #navbar-inicio {
   background-color: #000000;  
   padding: 1px;
-  border-bottom: 3px solid #0663b8;
   width: 100%;
   margin: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 
+.navbar-principal {
+  border-bottom: 3px solid #0663b8;
+}
 
 .navbar-principal ul, #nav-links {
     display: flex;
@@ -161,9 +169,45 @@ footer li:first-child img{
 /* estilos para foto principal y texto principal*/
 
 
+.imagen-inicio {
+  background-image: url("../img/fotoprincipal.jpeg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
 
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
 
- 
+.imagen-inicio-texto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.imagen-inicio-texto h1,
+.imagen-inicio-texto h2 {
+  margin: 0;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+  font-family: "Montserrat", sans-serif;
+}
+
+.imagen-inicio-texto h1 {
+  font-size: 3rem;      
+  letter-spacing: 2px;  
+  word-spacing: 8px;
+}
+
+.imagen-inicio-texto h2 {
+  font-size: 1.5rem;
+  letter-spacing: 4px;
+  opacity: 0.9;
+  
+}
 
 
  /* página de inicio, info */
@@ -210,6 +254,24 @@ footer li:first-child img{
   flex-direction: row-reverse;
 }
 
+
+
+/* estilos para el video */
+
+.video-container {
+  width: 80%;
+  margin: 60px auto;
+  aspect-ratio: 16 / 9;
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 95%;
+  border: none;
+  border-radius: 12px;
+}
+
+
 /* estilos para la página tienda */
 
 .titulo-tienda {
@@ -217,8 +279,8 @@ footer li:first-child img{
     text-align: center;
     font-size: 2.2rem;
     color: #000000;
-    margin-top: 25px;
-    margin-bottom: 10px;
+    margin-top: 55px;
+    margin-bottom: 7px;
     padding: 3px;
     font-family: "Montserrat", sans-serif;
     letter-spacing: 1px;
@@ -232,7 +294,7 @@ footer li:first-child img{
     font-size: 1rem;
     color: #000000;
     margin-top: 0px;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     padding: 2px;
     font-family: "Montserrat", sans-serif;
     word-spacing: 7px;
@@ -382,7 +444,7 @@ form, .contacto h2{
 }
 
 .contacto {
-    margin-top: 15px;
+    margin-top: 60px;
 }
 
 .contacto-mensaje {
@@ -446,5 +508,6 @@ label {
     width: 90%;
     padding: 20px;
     margin: 0 auto;
+    margin-top: 50px;
   }
 }
