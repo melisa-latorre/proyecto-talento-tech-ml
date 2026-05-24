@@ -165,6 +165,21 @@ footer li:first-child img{
   }
 }
 
+/* para que el footer quede abajo */
+
+html, body {
+  height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
 
 /* estilos para la página de inicio */
 /* estilos para foto principal y texto principal*/
