@@ -273,9 +273,7 @@ main {
 
 
 @media (max-width: 768px) {
-  .primer-texto,
-.segundo-texto,
-.tercer-texto {
+  .primer-texto, .segundo-texto, .tercer-texto {
     font-size: 16px;
   }
 }
