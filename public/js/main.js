@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     };
 
-    /* clics en cada botón "COMPRAR" */
+    /* clicks en cada botón "COMPRAR" */
     botonesComprar.forEach((boton) => {
         boton.addEventListener("click", (e) => {
             const tarjetaProducto = e.target.closest(".card");

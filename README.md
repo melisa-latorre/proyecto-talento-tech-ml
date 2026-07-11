@@ -3,7 +3,7 @@ Entrega del proyecto final para el curso "Frontend-js" de Talento Tech.
 
 # 🏎️ TIENDA OFICIAL FRANCO COLAPINTO - ALPINE F1 TEAM 🏎️
 
-Este proyecto es una página web interactiva que simula un e-commerce de indumentaria y coleccionables del piloto argentino de la escudería Alpine F1 Team. 
+Este proyecto es una página web interactiva que simula un e-commerce de indumentaria y coleccionables del piloto argentino Franco Colapinto. 
 
 
 ---
@@ -34,15 +34,15 @@ El flujo del JavaScript está modularizado para evitar errores de ejecución en 
 
 ```text
 mi-proyecto/
-├── index.html                  # Página de Inicio (Carga contador-global.js)
+├── index.html                  # página de Inicio (Carga contador-global.js)
 ├── css/
-│   └── style.css               # Estilos unificados de la tienda y el carrito
+│   └── style.css               # estilos unificados de la tienda y el carrito
 ├── public/
 │   └── js/
-│       ├── contador-global.js  # Auxiliar que mantiene vivo el contador en Inicio/Contacto
-│       ├── main.js             # Lógica de captura y guardado en la Tienda
+│       ├── contador-global.js  # auxiliar que mantiene vivo el contador en Inicio/Contacto
+│       ├── main.js             # lógica de captura y guardado en la Tienda
 │       └── carrito.js          # Lógica de renderizado, cálculo de totales y borrado
 └── views/
-    ├── tienda.html             # Catálogo de productos disponibles
-    ├── carrito.html            # Interfaz de revisión de compra
-    └── contacto.html           # Formulario de contacto
+    ├── tienda.html             # catálogo de productos disponibles
+    ├── carrito.html            # interfaz de revisión de compra
+    └── contacto.html           # formulario de contacto
