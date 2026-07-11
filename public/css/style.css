@@ -469,6 +469,81 @@ main {
 
 
 
+/* estilos para carrito */
+
+.carrito-resumen {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #fffafa;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(247, 208, 228, 0.25);
+    text-align: right;
+    font-family: "Montserrat", sans-serif;
+}
+
+.carrito-resumen p {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.carrito-acciones {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.carrito-acciones button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 12px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-vaciar {
+    background-color: #e0e0e0;
+    color: #333333;
+}
+
+.btn-vaciar:hover {
+    background-color: #cccccc;
+}
+
+.btn-finalizar {
+    background-color: #fa84ba;
+    color: #FFFFFF;
+}
+
+.btn-finalizar:hover {
+    background-color: #0663b8;
+}
+
+/* Ajustes para el botón de eliminar dentro de la card */
+.card .btn-eliminar {
+    background-color: #ff4d4d;
+    margin-top: auto; /* Empuja el botón abajo de todo en la card */
+}
+
+.card .btn-eliminar:hover {
+    background-color: #cc0000;
+}
+
+/* Mensaje de carrito vacío */
+.carrito-vacio {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    grid-column: 1 / -1; /* Ocupa todo el ancho de la grilla */
+    padding: 40px;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+
 /* estilos para la página contacto y formulario*/
 
 form {
