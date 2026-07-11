@@ -4,10 +4,16 @@ document.addEventListener("DOMContentLoaded", () => {
     const contadorCarrito = document.querySelector(".navbar-principal .count");
     const botonesComprar = document.querySelectorAll(".productos-grid .card button");
 
+
     const actualizarContador = () => {
         if (contadorCarrito) {
             const totalItems = carrito.reduce((acumulador, producto) => acumulador + producto.cantidad, 0);
-            contadorCarrito.textContent = totalItems;
+
+            if (totalItems === 0) {
+                contadorCarrito.textContent = "";
+            } else {
+                contadorCarrito.textContent = totalItems;
+            }
         }
     };
 

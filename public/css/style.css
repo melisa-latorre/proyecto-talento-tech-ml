@@ -471,13 +471,49 @@ main {
 
 /* estilos para carrito */
 
+.titulo-carrito {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #000000;
+    margin-top: 55px;
+    margin-bottom: 7px;
+    padding: 3px;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 1px;
+    width: 100%;
+    font-weight: bolder;
+    transition: all 0.3s ease;
+}
+
+.subtitulo-carrito {
+    text-align: center;
+    font-size: 1rem;
+    color: #000000;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    padding: 2px;
+    font-family: "Montserrat", sans-serif;
+    word-spacing: 2px;
+    width: 100%;
+}
+
+.titulo-carrito-destacado {
+  color: #000000;
+}
+
+.titulo-carrito-destacado:hover {
+  color: #0663b8;
+}
+
+.titulo-carrito:hover {
+  transform: scale(1.05);
+}
+
+
 .carrito-resumen {
     max-width: 1000px;
     margin: 30px auto;
     padding: 20px;
-    /*background: #fffafa;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(247, 208, 228, 0.25);*/
     text-align: right;
     font-family: "Montserrat", sans-serif;
 }
@@ -523,17 +559,17 @@ main {
     background-color: #0663b8;
 }
 
-/* Ajustes para el botón de eliminar dentro de la card */
+/* ajustes para el botón de eliminar dentro de la card */
 .card .btn-eliminar {
     background-color: #ff4d4d;
-    margin-top: auto; /* Empuja el botón abajo de todo en la card */
+    margin-top: auto; 
 }
 
 .card .btn-eliminar:hover {
     background-color: #cc0000;
 }
 
-/* Mensaje de carrito vacío */
+/* mensaje de carrito vacío */
 .carrito-vacio {
     text-align: center;
     font-family: "Montserrat", sans-serif;
@@ -541,6 +577,52 @@ main {
     padding: 40px;
     font-size: 1.2rem;
     color: #555;
+}
+
+.enlace-carrito {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;  /* Ancho fijo para que no se mueva el menú */
+    height: 32px; /* Alto fijo */
+    text-decoration: none;
+    color: white;
+}
+
+.icono-carrito {
+    width: 26px;
+    height: 26px;
+    stroke: currentColor;
+    transition: transform 0.2s ease;
+}
+
+
+.enlace-carrito:hover .icono-carrito {
+    transform: scale(1.1);
+}
+
+
+.navbar-principal .count {
+    position: absolute;
+    top: -2px;    
+    right: -4px;
+    background-color: #0663b8; 
+    color: white;
+    font-size: 10px;
+    font-family: sans-serif;
+    font-weight: bold;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.navbar-principal .count:empty {
+    display: none;
 }
 
 

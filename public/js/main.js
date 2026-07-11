@@ -1,20 +1,25 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // 1. Inicializar el carrito levantando los datos de localStorage (si existen)
+    /* inicializar el carrito levantando los datos de localStorage (si existen) */
     let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
-    // 2. Capturar los elementos del DOM necesarios
+    /* capturar los elementos del DOM necesarios */
     const contadorCarrito = document.querySelector(".navbar-principal .count");
     const botonesComprar = document.querySelectorAll(".productos-grid .card button");
 
-    // 3. Función para actualizar el número total en el menú de navegación
+    /* función para actualizar el número total en el menú de navegación */
     const actualizarContador = () => {
         if (contadorCarrito) {
             const totalItems = carrito.reduce((acumulador, producto) => acumulador + producto.cantidad, 0);
-            contadorCarrito.textContent = totalItems;
+            
+            if (totalItems === 0) {
+                contadorCarrito.textContent = "";
+            } else {
+                contadorCarrito.textContent = totalItems;
+            }
         }
     };
 
-    // 4. Escuchar los clics en cada botón "COMPRAR"
+    /* clics en cada botón "COMPRAR" */
     botonesComprar.forEach((boton) => {
         boton.addEventListener("click", (e) => {
             const tarjetaProducto = e.target.closest(".card");
@@ -23,10 +28,9 @@ document.addEventListener("DOMContentLoaded", () => {
             const precioTexto = tarjetaProducto.querySelector(".precio").textContent;
             const imagenSrc = tarjetaProducto.querySelector("img").getAttribute("src");
 
-            // Limpiamos el precio convirtiéndolo a número entero (ej: de "$40.000" a 40000)
             const precio = parseInt(precioTexto.replace("$", "").replace(/\./g, ""), 10);
 
-            // Verificamos si el producto ya está en el carrito
+            
             const existeProducto = carrito.find(item => item.titulo === titulo);
 
             if (existeProducto) {
@@ -41,13 +45,13 @@ document.addEventListener("DOMContentLoaded", () => {
                 carrito.push(nuevoProducto);
             }
 
-            // Guardamos el array actualizado en localStorage
+            /* guardar el array actualizado en localStorage */
             localStorage.setItem("carrito", JSON.stringify(carrito));
 
-            // Actualizamos la interfaz del contador
+            /* actualizar la interfaz del contador */
             actualizarContador();
             
-            // Feedback visual rápido en el botón
+            /* visual rápido en el botón para indicar que se agregó al carrito */
             boton.textContent = "¡AGREGADO!";
             boton.style.backgroundColor = "#28a745"; 
             setTimeout(() => {
@@ -57,7 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // Ejecutar al cargar por si ya había ítems previos
+    /* ejecutar al cargar por si ya había ítems previos */
     actualizarContador();
 });
 
